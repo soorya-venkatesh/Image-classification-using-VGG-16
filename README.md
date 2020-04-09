@@ -34,3 +34,5 @@ in the following order:
 ### Model 3 summary:
 1. Used same network as Model-2 'INPUT --> VGG-16 without Top layers(FC) --> 2 Conv Layers identical to FC --> Output Layer' and trained only Last 6 Layers of VGG-16 network, 2 Conv layers identical to FC layers, 1 output layer.
 
+#### Note:  
+Due to hardware limitations, I reduced the size of the image to lessen the train time. Results might not be very good.
