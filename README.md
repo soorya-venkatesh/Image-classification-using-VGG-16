@@ -27,7 +27,8 @@ in the following order:
 
 ### Model 2 summary:
 1. Used VGG-16 pretrained network without Fully Connected layers and initialize all the weights with Imagenet trained weights.  
-2. After the VGG-16 network without FC layers, used Conv layers only as a Fully connected layer. any FC layer can be converted to a CONV layer. This conversion will reduce the No of Trainable parameters in FC layers. 
+2. After the VGG-16 network without FC layers, used Conv layers only as a Fully connected layer. any FC layer can be converted to a CONV layer. This conversion will reduce the No of Trainable parameters in FC layers.[Reference](http://cs231n.github.io/convolutional-networks/#convert
+)
 3. Final architecture will be VGG-16 without FC layers(without top), 2 Conv layers identical to FC layers, 1 output layer for 16 class classification. INPUT --> VGG-16 without Top layers(FC) --> 2 Conv Layers identical to FC --> Output Layer
 
 ### Model 3 summary:
